@@ -1,4 +1,5 @@
 # 🎨 Crystal FailSafe - IT Support Ticketing System
+Live-Demo https://crystal-failsafe.vercel.app/ 
 
 AI-powered IT ticketing system for Crystal Bridges Museum. Automatically processes employee emails, classifies tickets with AI, and provides IT staff with a modern dashboard.
 
