@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { ThemeProvider } from './context/ThemeContext';
-
+import Admin from './pages/Admin';
 // Pages
 import Login from './pages/login';
 import Signup from './pages/Signup';
@@ -66,6 +66,7 @@ function App() {
           <Route path="/dashboard" element={<Protected><Dashboard onLogout={handleLogout} user={user} /></Protected>} />
           <Route path="/analytics" element={<Protected><Analytics /></Protected>} />
           <Route path="*" element={<Navigate to="/dashboard" />} />
+          <Route path="/admin" element={<Protected><Admin onLogout={handleLogout} /></Protected>} />
         </Routes>
       </Router>
     </ThemeProvider>
