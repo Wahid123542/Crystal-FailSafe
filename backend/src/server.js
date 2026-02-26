@@ -37,7 +37,6 @@ app.use('/api/auth', authLimiter, require('./routes/auth'));
 app.use('/api/tickets', require('./routes/tickets'));
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/gmail', require('./routes/gmailRoutes'));
-
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
